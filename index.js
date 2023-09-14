@@ -1,10 +1,10 @@
 const parentContainer = document.querySelector("#container");
+let gridSize = 16;
 
-const childDiv = document.createElement('div');
-childDiv.classList.add('child-div');
-parentContainer.appendChild(childDiv);
-
-let rows = 16;
-let columns = 16;
+for (let i = 0; i < gridSize * gridSize; i++){
+    const divs = document.createElement('div');
+    divs.classList.add("childDiv");
+    parentContainer.appendChild(divs);
+}
 
 
