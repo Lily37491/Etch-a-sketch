@@ -5,9 +5,11 @@ for (let i = 0; i < gridSize * gridSize; i++){
     const divs = document.createElement('div');
     divs.classList.add("childDiv");
     parentContainer.appendChild(divs);
+
+    divs.addEventListener('mouseover', () => {
+        divs.style.background = "blue";
+    })
+ 
 }
 
-parentContainer.addEventListener('mouseover', () => {
-    console.log("LOl");
-})
 
