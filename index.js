@@ -7,4 +7,7 @@ for (let i = 0; i < gridSize * gridSize; i++){
     parentContainer.appendChild(divs);
 }
 
+parentContainer.addEventListener('mouseover', () => {
+    console.log("LOl");
+})
 
